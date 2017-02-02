@@ -6,18 +6,21 @@ body {
 }
 
 #header-nav {
-  background-color: #FF7F50;
+  background-color: #FF6F00;
   border-radius: 0;
   border: 0;
 }
 
 #logo-img {
   background: url('images/dance.png') no-repeat;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   margin: 10px 15px 10px 0;
-  border-radius: 40%;
+ background-size: cover;
+    -webkit-border-radius: 50px;  
+     
 }
+
 
 .navbar-brand {
   padding-top: 25px; 
@@ -25,6 +28,7 @@ body {
 .navbar-brand h1 {
 	font-size: 30px;
 	}
+
 #clipped-title2 {
 	background: url(images/green.jpg)no-repeat top center;
 	background-size: cover;
@@ -34,18 +38,152 @@ body {
 }
 
 #clipped-title2  h1 {
-	font-size: 50px;
+	font-size: 30px;
 	font-family: Lora, sans-serif;
 	text-align: center;
+	font-weight: bold;
 	-webkit-transition: text-shadow 1s ease;
 	text-shadow: 0 0 1px rgba(0,0,0,.1);	
 	padding: 0;
+	margin-top: 0;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
 }
 
 
 span{
 	
 	font-style: italic;
-	-webkit-text-fill-color:white;
+	vertical-align: middle;
+	-webkit-text-fill-color:black;
+	
 
 }
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #4CAF50;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #33691E;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+/* HOME PAGE */
+
+
+.container .jumbotron {
+  box-shadow: 0 0 15px #3F0C1F;
+  border: 1px solid #3F0C1F;
+  height: 300px;
+}
+
+#Events {
+  height: 300px;
+  width: 100%;
+  position: relative;
+  border: 2px solid #3F0C1F;
+}
+
+
+
+#Events {
+  
+  background-position: center;
+}
+
+#Events span {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  opacity: .8;
+  font-style: normal;
+
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+	.container .jumbotron {
+    background: url('images/green.jpg') no-repeat;
+    height: 300px;
+  }
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('images/dance.pngg') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+  /* End Header */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 90px;
+  }
+
+  .navbar-brand h1 { /*academy name */
+    padding-top: 10px;
+    font-size: 5vw;/* 1vw = 1% of viewport width */
+  }
+
+  .navbar-brand span { 
+    font-size: 0.8em;
+    margin-top: 12px;
+
+  }
+ 
+ #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+
+  }
+  
+  #call-btn > a {
+    font-size: 1em;
+    display: block;
+   text-align: left;
+    padding: 10px;
+    color: black;
+    clear:left;
+
+  }
+
+  }

@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Raagaleena Dance Academy</title>
      <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="Teachers.css">
      <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-	<link rel="stylesheet" href="Teachers.css">
+	   
 </head>
 <style> 
 	body{ 
@@ -21,22 +22,81 @@
 <header>
     <nav id="header-nav" class="navbar navbar-default">
       <div class="container">
-      <div class="navbar-header">
-          <a href="Teachers.html" class="pull-left">
-            <div id="logo-img"></div>
+        <div class="navbar-header">
+          <a href="Teachers.html" class="pull-left visible-md visible-lg">
+          <div id="logo-img"></div>
           </a>
           <div id="clipped-title2" class="navbar-brand">
             <a href="Teachers.html"><h1 id="clipped-title2">Raagaleena Dance Academy</h1></a>
             <span>Dance your heart away</span>
           </div>
-         
-          
-         
-      </div>
-      </div>
+          <div id="call-btn" class="visible-xs">
+            <a class="btn" href="tel:862-221-8999">
+             <span class="glyphicon glyphicon-earphone"></span>
+             862-221-8999
+            </a>
+          </div>
+
+
+             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+            
+
+        </div><!-- .navbar brand -->
+
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="Teachers.html">Home</a>
+            </li>
+            <li>
+              <a href="#">Offerings</a>
+            </li>
+            <li>
+              <a href="#">Feats</a>
+            </li>
+            <li>
+              <a href="#">Instructors</a>
+            </li>
+            <li>
+              <a href="#">Studio</a>
+            </li>
+            
+          </ul><!-- #nav-list -->
+
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
       </nav>
       </header>
 
+    <div id="main-content" class="container">
+      <div id="first-tile" class="row">
+
+         <div class="col-md-2 col-sm-6 col-xs-12">
+         <a href="Teachers.html">
+            <div id="Events">
+            <span>Latest Events</span>
+            </div></a>
+         </div>
+        
+        <div class="col-md-10 col-sm-6 col-xs-12">
+         <div class="jumbotron">
+         <img src="images/green.jpg" alt="Picture of Student" class="img-responsive visible-xs">
+         </div>
+         </div>
+
+      </div><!-- row -->
+    </div><!-- container -->
+
+
+ <script src="js/jquery-3.1.1.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script src="mainscript.js"></script>
 
 </body>
 </html>
