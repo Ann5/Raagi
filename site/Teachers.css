@@ -20,7 +20,21 @@ body {
     -webkit-border-radius: 50px;  
      
 }
+.description{
+	font-size: 20px;
+	font-family: 'lora',sans-serif;
+	text-shadow: 1px 1px #FF5722;
 
+}
+
+p >span {
+	font-family: 'lora',sans-serif;
+	color: #2196F3;
+	font-weight: bold;
+	border-color: #B71C1C;
+	font-size: 30px;
+	text-shadow: 1px 1px #CDDC39;
+}
 
 .navbar-brand {
   padding-top: 25px; 
@@ -61,7 +75,6 @@ span{
 	vertical-align: middle;
 	-webkit-text-fill-color:black;
 	
-
 }
 
 #nav-list {
@@ -91,35 +104,54 @@ span{
 /* END HEADER */
 
 /* HOME PAGE */
+ .panel-footer .navbar-nav {
+  width: 100%;
+  text-align: center;
+}
 
+.panel-footer .container {
+	line-height: .7;
+	margin-top: -20px;
+	}
+	
+
+.panel-footer .navbar-nav > li {
+  float: none;
+  display: inline-block;
+}
+
+.text-center{
+	font-size: 15px;
+	opacity: .9;
+}
+
+.panel-footer{
+	  background-color:  #FF3D00;
+}
 
 .container .jumbotron {
   box-shadow: 0 0 15px #3F0C1F;
   border: 1px solid #3F0C1F;
-  height: 300px;
+  height: 400px;
 }
 
 #Events {
-  height: 300px;
+  height: 400px;
   width: 100%;
   position: relative;
   border: 2px solid #3F0C1F;
 }
 
 
-
-#Events {
-  
-  background-position: center;
-}
-
 #Events span {
+	color: white;
   position: absolute;
   width: 100%;
   text-align: center;
   font-size: 1em;
   text-transform: uppercase;
   font-weight: bold;
+  text-shadow: 1px 1px #29B6F6;
   color: white;
   opacity: .8;
   font-style: normal;
@@ -130,8 +162,10 @@ span{
 @media (min-width: 1200px) {
 
 	.container .jumbotron {
-    background: url('images/green.jpg') no-repeat;
-    height: 300px;
+    background: url('images/a1.jpg') no-repeat;
+    background-size: 100% 100%;
+    height: 400px;
+
   }
 
 }
@@ -140,17 +174,40 @@ span{
 @media (min-width: 992px) and (max-width: 1199px) {
   /* Header */
   #logo-img {
-    background: url('images/dance.pngg') no-repeat;
+    background: url('images/dance.png') no-repeat;
     width: 100px;
     height: 100px;
     margin: 5px 5px 5px 0;
   }
   /* End Header */
+  .container .jumbotron {
+    background: url('images/a1.jpg') no-repeat;
+    background-size: 100% 100%;
+    height: 350px;
+
+  }
+  #Events {
+  height: 350px;
+  width: 100%;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  }
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
+ .container .jumbotron {
+    background: url('images/a1.jpg') no-repeat;
+    background-size: 100% 100%;
+    height: 200px;
 
+  }
+  #Events {
+  height: 200px;
+  width: 100%;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  }
 }
 
 @media (max-width: 767px) {
@@ -184,6 +241,21 @@ span{
     color: black;
     clear:left;
 
+  }
+   .jumbotron {
+    background: url('images/a1.jpg') no-repeat;
+    background-size: 100% 100%;
+    height: 150px;
+
+  }
+  #Events {
+  height: 0px;
+  width: 0%;
+  position: relative;
+  
+  }
+  #Events span{
+  	display: none;
   }
 
   }
