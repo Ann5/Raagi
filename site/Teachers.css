@@ -221,6 +221,13 @@ h3.menu-item-title {
 
 .read span{
   font-size: 15px;
+  text-shadow: 1px 1px #29B6F6;
+ 
+}
+.read1{
+  font-size: 20px;
+  margin-right: 30px;
+  text-indent: 50px;
  
 }
 
