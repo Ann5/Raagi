@@ -1,0 +1,476 @@
+@CHARSET "ISO-8859-1";
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {    
+    margin: 0 auto;		
+	padding: 0;
+	font-family: 'Arima Madurai', cursive;		  
+}
+
+a{text-decoration:none;}
+
+audio {display: none;}
+fieldset,img {border: 0;}
+
+address,caption,cite,code,dfn,em,strong,th,var 
+{
+    font-weight: normal;
+    font-style: normal;
+}
+
+strong{font-weight: bold;}
+
+ol,ul 
+{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {text-align: left;}
+
+h1,h2,h3,h4,h5,h6 
+{
+	font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+
+q:before,q:after {content:'';}
+abbr,acronym { border: 0;}
+
+.wrapper
+{			
+	height: auto; 
+	width: 1000px;
+	margin: 0 auto;
+}		
+.fullpage
+{		
+	width: 1000px;
+	height: auto; 
+}
+
+p{font-size: 2em;}
+
+.intro p
+{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+
+.section {text-align:center;}
+
+.adr 
+{
+	font-size: 20px;
+	font-weight: 400;
+	color: white;
+	padding-top: 500px;
+}
+.offering 
+{
+	float: left;	
+	width: 90%;	
+	height: 80%; 	
+}
+
+.menu
+{
+	position:fixed;
+	top:10px;		
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0 0 0 40px;	
+}
+
+.menu li 
+{
+	display:inline-block;
+	margin: 35px;	
+	color: #000;
+	background:#fff;
+	font-size: 18px;
+	background: rgba(255,255,255, 0.5);
+	-webkit-border-radius: 10px;
+            border-radius: 10px;
+}
+
+.menu li.active
+{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+}
+
+.menu li a
+{
+	text-decoration:none;
+	color: #000;
+}
+
+.menu li.active a:hover
+{
+	
+	transform:scale(1.25);
+}
+
+.menu li:hover
+{	
+	transform:scale(1.25);
+}
+
+.menu li a,
+.menu li.active a
+{
+	padding: 9px 18px;
+	display:block;
+}
+
+.menu li.active a
+{
+	color: #fff;
+}
+
+.show-menu
+{
+    display: none;
+}
+
+.mycalendar 
+{
+	position: relative; 
+	padding-bottom: 75%; 
+	height: 0; 
+	overflow: hidden; 
+}
+ 
+.mycalendar iframe 
+{ 
+	position: absolute; 
+	top:0; 
+	left: 0; 
+}
+
+#slide1, #slide2, #slide3, #slide4, #slide5, #slide6, #slide7  
+{	
+	width: 100%;
+    height: 400px;    
+    background-size: 100% 100%;
+    border: 1px solid red;
+}
+
+#calendarBtn
+{
+	color: #000;
+	background:#fff;
+	font-size: 18px;
+	background: rgba(255,255,255, 0.5);
+	-webkit-border-radius: 10px;
+            border-radius: 10px;
+}
+
+#modalCalendar
+{
+	display: none;
+	position: fixed; 
+    z-index: 1; 
+    left: 200px;
+    top: 100px;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+}
+
+@media screen and (max-width: 768px) 
+{
+  .menu li
+  {
+	  float: none;
+      border-bottom: 2px solid red;
+  }
+  .show-menu
+  {
+	  display:block; 
+      background: red;
+  }
+  .menu li {display: none;}
+  #menu-expanded{display:block;}
+}
+
+
+figure{  
+  width: 90%;  
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -150px;
+  overflow: hidden;
+  float: left;   
+}
+
+figure img{
+  width: 90%;  
+  transition: all .5s ease-in-out;      
+}
+
+figure .description{    
+    bottom: 0;
+	width: 100%; 
+	height: 80%; 
+    transform: translateY(110%);
+    font-size: 22px;    	
+    transition: all .5s;
+}
+
+figure:hover img{
+    -webkit-filter: grayscale(10%) blur(3px);
+    filter: grayscale(10%) blur(3px);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+figure:hover .description{
+    transform: translateY(0);
+    transition: all .5s;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    margin: 10px auto;
+    background: #ff6600;
+}
+
+.photobanner{
+    height: 250px;
+    width: 2000px;
+    margin-bottom: 5px;
+    font-size: 0;
+}
+
+.photobanner img{
+	margin-bottom: 10px;
+	margin-right: 5px;
+	height: 250px;
+	width: 350px;
+}
+
+.photobanner img  {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+ 
+.photobanner img:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    cursor: pointer;
+ 
+    -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+
+
+/*keyframe animations*/
+.first {
+    -webkit-animation: bannermove 30s linear infinite;
+       -moz-animation: bannermove 30s linear infinite;
+        -ms-animation: bannermove 30s linear infinite;
+         -o-animation: bannermove 30s linear infinite;
+            animation: bannermove 30s linear infinite;
+}
+ 
+@keyframes "bannermove" {
+ 0% {margin-left: 0px;}
+ 100% {margin-left: -2130px;}
+}
+ 
+@-moz-keyframes bannermove {
+ 0% {margin-left: 0px;}
+ 100% {margin-left: -2130px;}
+}
+ 
+@-webkit-keyframes "bannermove" {
+ 0% {margin-left: 0px;}
+ 100% {margin-left: -2130px;}
+}
+ 
+@-ms-keyframes "bannermove" {
+ 0% {margin-left: 0px;}
+ 100% {margin-left: -2130px;}
+}
+ 
+@-o-keyframes "bannermove" {
+ 0% {margin-left: 0px;}
+ 100% {margin-left: -2130px;}
+}
+
+
+.guru
+{	
+	overflow: auto;
+	margin: 0px 0px 0px 0px;
+	padding-right: 2cm;	
+	padding-top: 1cm;
+	padding-left: 1cm;
+	text-align: justify;
+	font-size: 22px;	
+}
+
+.guruni
+{
+	float: left;
+    margin: 0px 0px 0px 50px;	    
+}
+
+.text{	
+	text-align: justify;
+    text-indent: 1.5em;
+	font-size: 20px; 
+	width: 550px;
+}
+.camp {
+	position: absolute;
+    left: 0px;
+    top: 150px;  
+	opacity: 0.8;
+}
+
+.camp:hover
+{
+	opacity: 1.1; 
+}
+
+.reg {
+	position: absolute;    
+    top: 150px;
+    z-index: 0;
+	float: right;
+	right: 20px;
+	opacity: 0.8;
+}
+.reg:hover
+{
+	opacity: 1.1; 
+}
+
+.image1 {
+    position:relative;
+    margin: 0 auto;
+    padding: 5px;
+     float: left;
+}
+.image1 img {
+    width:100%;
+    float: left;
+}
+.image1:after {
+    content:'SWAPNA RAGALEENA is the ARTISTIC DIRECTOR and was initiated into Kuchipudi at age 3 by Guru Vedantam Ramalinga Shastry. Spanning all variants of Kuchipudi like ballet, tarangam, thillana, etc, she went on to give more than 200 performances and her students countless more. Guess what she was a finalist Supermom in a North America Contest in 2015.';    
+    color:#fff;
+    position:absolute;
+    width:100%; height: 100%; max-height:100%;
+
+    top:0; left:0;
+    background:rgba(0,0,0,0.75);
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.image1:hover:after {
+    opacity:1;
+}
+
+.image2 {
+    position:relative;
+    margin: 0 auto;
+    padding: 5px;
+     float: left;
+}
+.image2 img {
+    width:100%;
+    float: left;
+}
+.image2:after {
+    content:'PRIYANKA RAMGOPAL started learning Andhra Natyam under the revered Gurus Kala Krishna and Perini Kumar and soon graduated to Kuchupudi under Nattuvangam expert from Kuchipudi lineage, Guru Mahankali Mohan garu. She has performed at various venues including Children’s Film Festivals, IKDF, Silicon Andhra, etc.';    
+    color:#fff;
+    position:absolute;
+    width:100%; height: 100%; max-height:100%;
+
+    top:0; left:0;
+    background:rgba(0,0,0,0.75);
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.image2:hover:after {
+    opacity:1;
+}
+
+.image3 {
+    position:relative;
+    margin: 0 auto;
+    padding: 5px;
+     float: left;
+}
+.image3 img {
+    width:100%;
+    float: left;
+}
+.image3:after {
+    content:'ANUSHA SANJAY is known to switch between Bollywood and Freestyle dance forms with such ease that it will be hard to make out when she did. She brings her years of hard training and enthusiasm to the stage for her students who range from kids to corporate clients. She also plays volleyball eqaully well.';    
+    color:#fff;
+    position:absolute;
+    width:100%; height: 100%; max-height:100%;
+
+    top:0; left:0;
+    background:rgba(0,0,0,0.75);
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.image3:hover:after {
+    opacity:1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Events {
+  height: 400px;
+  width: 100%;
+  position: relative;
+  border: 2px solid #3F0C1F;
+}
+
+

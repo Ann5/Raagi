@@ -1,5 +1,14 @@
 var names = new Array("For example, it’s possible to look for elements with a class name of .box which are only inside a element with first-line as the id. Any items with the box class that aren’t inside of the first-line element, won’t be returned.", "classical", "bollywood");
 
+
+
+
+
+
+
+
+
+
        function displayImage(event)
        {
        	console.log(event);
