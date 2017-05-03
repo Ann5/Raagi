@@ -164,7 +164,7 @@ margin:10px auto;
 
 
 #myImg {
-    border-radius: 5px;
+    
     cursor: pointer;
     transition: 0.3s;
 }
@@ -174,5 +174,15 @@ margin:10px auto;
 
 
 
+.News h1{
 
+text-align: left;
+
+font-family: 'lora',sans-serif;
+  color: #2196F3;
+  font-weight: bold;
+  border-color: #B71C1C;
+  font-size: 30px;
+  text-shadow: 1px 1px #CDDC39;
+}
 
