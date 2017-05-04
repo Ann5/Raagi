@@ -54,9 +54,17 @@ function func()
   
 }
 
-  
-
-
  document.querySelector("button").onclick= displayImage;
   	 
  
+
+ 
+
+
+function image(img) {
+
+    var src = img.src;
+    window.open(src);
+}
+
+

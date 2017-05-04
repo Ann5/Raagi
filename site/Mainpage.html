@@ -6,7 +6,7 @@
   <title> DANCE | DALLAS | IRVING | KUCHIPUDI | BOLLYWOOD | FREESTYLE </title>  
   <link rel="stylesheet" type="text/css" href="css/style1.css"/>  
   <link rel="stylesheet" type="text/css" href="css/style2.css"/>  
-  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   
     
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -23,6 +23,7 @@
 
   <script type="text/javascript" src="js/vScroll.js"></script>          
   <script type="text/javascript" src="js/preqs.js"></script>
+  <script type="text/javascript" src="js/mainscript.js"></script>
 <style>
 #section0
 {
@@ -43,26 +44,52 @@
 
 
       <div class="section" id="section4"> 
-          <audio id="sound" data-autoplay><source src="muvvalu.mp3"></source></audio> 
-                <div class ="News">
-          <h1>RLDA NEWS</h1>
-          <h2>Stay up-to-date with the latest news and events from our RLDA instructors and staff including upcoming academy events, schedule information or just cool videos that might interest you!</h2>
-          <ol>Summer Camps Registration Open on May 15th</ol>
-          <ol>Bagged Winners and Runners Trophy of "I love Dance Competition 2017",Production Team <ol> 
-        </div>
-        <div class ="Events">
-          <h2>Events</h2>
-          <ol>Runners Of Ilove Dance Competition 2017",Production NUmber-Bollywood <ol>
-          <div class="photobanner">        
-            <img class ="first" src="images/slider-img1.jpg">
-              <img src="images/slider-img2.jpg">
-              <img src="images/slider-img3.jpg">
-              <img src="images/slider-img4.JPG">
-              <img src="images/slider-img5.JPG">        
-          </div>
-          <ol>Runners Of Ilove Dance Competition 2017",Production NUmber-Bollywood <ol>
-        </div>
-                
+
+          <p>Stay up-to-date with the latest news and events from our RLDA instructors and staff including upcoming academy events, schedule information or just cool videos that might interest you!</p><br>
+
+          <div class="col-md-6 col-sm-2" class ="News" id="box">
+              <h1 class="blink">RLDA NEWS!!!</h1>
+
+              <a href="#" onclick="document.getElementById('chgtext').innerHTML='Its SUMMER!! Let’s learn something new with lots of fun and dance.RLDA is all excited to offer  “Summer Camp 2017”  between 9AM  and 4PM and offers dance, yoga, music, art, study time and language classes ( both Telugu and Hindi). The camp will be filled with fun  activities and focuses on overall development of the kid during holiday time. We have successfully offered “ Summer Camp 2017” for the last two years and have been greatly appreciated by parents and guardians for quality and learning methodologies.This year, we are offering an intense 2-hour “Summer Dance Workshop” in the evenings for an additional small fee which focuses on next-level dance choreography preparing your kid to become a better performer! NOTE: Pre-registrations are open for both “Summer Camp” and “Summer Workshop”. Register on-call now and avail a discount. Limited registrations only! Click the link for contact and more details.';"><ol>RLDA Summer Camps Registrations Open for the year 2017<ol></a> 
+              <br>
+              <a href="#" onclick="document.getElementById('chgtext').innerHTML='  As its 39th anniversary, “I Love Dance 2017” competition was held at Dallas and we are proud to have participated as production teams and finally our two-months of hard work was fruitful. Our “Bollywood Bhangra Team” won first place and “Classical Tillana Team” won second place. Thanks to our choreographers and dancers who strive to deliver their best every time they dance. ';"><ol>Hurray! Congratulations to our Bollywood Team for winning first and "Classical Team" for winning second at "I Love Dance 2017". We're proud of you!!!<ol></a>
+              
+
+         </div>
+
+         <div class="col-md-6 col-sm-10 col-xs-12" id="box1">
+          <br>
+           <div id="chgtext"><p id="contentpara">It's SUMMER!! Let’s learn something new with lots of fun and dance.<br> 
+
+           RLDA is all excited to offer<span> "Summer Camp 2017"</span>between 9AM and 4PM and offers dance, yoga, music, art, study time and language classes (both Telugu and Hindi). The camp will be filled with fun activities and focuses on overall development of the kid during holiday time. We have successfully offered "Summer Camp" for the last two years and have been greatly appreciated by parents and guardians for quality and learning methodologies. <br>
+
+           This year, we are offering an intense 2-hour<span> "Summer Dance Workshop" </span>in the evenings for an additional small fee which focuses on next-level dance choreography preparing your kid to become a better performer!<br>
+
+           NOTE: Pre-registrations are open for both "Summer Camp" and "Summer Workshop". Register on-call now and avail a discount.<span> Limited registrations only! Click the link for contact and more details.</span>
+             <span><a href="images/a1.jpg" target="_blank"><img src="images/a1.jpg" height="1" size="1" onclick="image(this)">Click here for flyer</a></span></p></div>
+           
+         </div>
+           
+
+         <div class="col-md-10 col-sm-10 col-xs-12" class ="Events" id="box2">
+          <h1>RLDA EVENTS</h1>
+           <div id="Eventsid">
+           <ol>
+              <li type="1">Congratulations to our Bollywood Team for winning first and "Classical Team" for winning second at "I Love Dance 2017". </li>
+              <div class="container">
+                <div class="photobanner" id="Eventsphoto">        
+                  <img class ="first" src="images/slider-img1.jpg">
+                  <img src="images/slider-img2.jpg">
+                  <img src="images/slider-img3.jpg">
+                  <img src="images/slider-img4.JPG">
+                  <img src="images/slider-img5.JPG">        
+                </div>  
+              </div>
+              <br>
+             <li type="1">Summer Camps Registration Open on May 15thSummer Camps Registration Open on May 15thSummer Camps Registration Open on May 15thSummer Camps Registration Open on May 15thSummer Camps Registration </li>
+            </ol>
+           </div> <!--Eventsid end -->
+         </div>    <!--box2 end -->
 
       </div>    <!--section end -->
 
